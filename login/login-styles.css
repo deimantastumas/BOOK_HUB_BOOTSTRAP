@@ -1,0 +1,32 @@
+.header {
+  background: #1b1b1b;
+}
+
+.header img {
+  margin-left: 30px;
+  height: 60px;
+}
+
+.card {
+  margin-top: 7vh;
+  background: #1b1b1b;
+}
+
+.card img {
+  width: 200px;
+}
+
+.card h3 {
+  color: #ff9900;
+}
+
+.card label {
+  color: #fff;
+}
+
+.footer {
+  height: 10vh;
+  background: #363636;
+  color: #fff;
+  text-align: center;
+}
