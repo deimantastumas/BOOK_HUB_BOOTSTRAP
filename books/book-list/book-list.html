@@ -114,23 +114,73 @@
     </section>
 
     <section class="content p-2">
+      <!-- POP UP BOX MODAL-->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <!-- <h5>Harry Potter And The Chamber Of Secrets</h5> -->
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body p-4">
+              <div class="row">
+                <div class="col-5 image">
+                  <img src="../../images/jujutsu-kaisen.jpg" alt="#" class="cover">
+                </div>
+                <div class="col data">
+                  <div class="col main">
+                    <h4 class="name">Harry Potter And The Chamber Of Secrets</h4>
+                    <h5 class="author">J.K.Rowling</h2>
+                  </div>
+                  <div class="col details">
+                    <h5><strong>Product Details</strong></h4>
+                    <div class="col">
+                      <div class="row">
+                        <div class="col-6"><strong>Publication Date: </strong></div>
+                        <div class="col-6" id="publicationDate">2001</div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="row">
+                        <div class="col-6"><strong>Genre: </strong></div>
+                        <div class="col-6" id="genre">Fantasy</div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="row">
+                        <div class="col-6"><strong>Language: </strong></div>
+                        <div class="col-6" id="language">English</div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="row">
+                        <div class="col-6"><strong>ISBN: </strong></div>
+                        <div class="col-6" id="isbn">1451346843498631</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col buttons">
+                    <button type="button" class="btn btn-success" data-bs-dismiss="modal">Read</button>
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Add To Bookshelve</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
       <div class="py-1">
         <div class="container">
           <!-- ROW========================================================================= -->
           <div class="row hidden-md-up">
             <div class="col">
               <div class="card">
-                <!-- POP UP BOX -->
-            
-                
-
-                <a href="#" data-bs-toggle="modal" data-bs-target=".content">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal">
                    <div class="card-block">
                   <img
                     src="../../images/GTO-Great-Teacher-Onizuka.jpg"
                     alt="book"
                   />
-
                   <h4 class="card-title">GTO: Great Teacher Onizuka</h4>
                   <h6 class="card-subtitle text-muted">Author</h6>
                 </div>
@@ -140,7 +190,7 @@
 
             <div class="col">
               <div class="card">
-                <a href="#" data-bs-toggle="modal" data-bs-target=".content">
+                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal">
                    <div class="card-block">
                   <img src="../../images/jujutsu-kaisen.jpg" alt="book" />
 

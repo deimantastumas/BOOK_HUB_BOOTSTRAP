@@ -161,6 +161,11 @@ nav ul li:hover > ul {
   border: none;
 }
 
+.card a {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
 .card img {
   width: 210px;
   height: 320px;
@@ -180,4 +185,59 @@ nav ul li:hover > ul {
   background: #363636;
   color: #fff;
   text-align: center;
+}
+
+/* MODAL */
+
+.modal {
+  margin-top: 7.2vh;
+}
+
+/* .modal-dialog {
+  width: 1800px;
+
+  height: 600px !important;
+} */
+
+.modal .col .image {
+  text-align: center;
+}
+
+.modal .cover {
+  box-shadow: 5px 10px 5px grey;
+}
+
+.modal .name {
+  font-weight: bold;
+  margin-bottom: 1vh;
+}
+
+.main {
+  border-bottom: 10px solid #ff9900;
+
+  padding: 5px;
+}
+
+.details {
+  margin-top: 10px;
+}
+
+.buttons {
+  margin-top: 5vh;
+}
+
+.buttons .col {
+  text-align: center;
+}
+
+.buttons .btn {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+  /* TODO ================================================
+  
+  Optimize modal box for smaller screens
+
+  ======================================================*/
 }
