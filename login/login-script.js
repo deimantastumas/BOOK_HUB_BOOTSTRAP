@@ -9,6 +9,17 @@ function signup_request(){
     return request;
 }
 
+function signIn_request(){
+    var request={
+        email: document.getElementById("email-field").value,
+        password: document.getElementById("password-field").value
+    };
+
+    window.alert(request.name + " " + request.email + " " + request.password);
+    return request;
+}
+
+
 //SEND REGISTRATION REQUEST
 $('#submit-btn').on('click', function(){
     var request= signup_request();
@@ -49,19 +60,21 @@ $('#confirm-btn').on('click', function(){
     })
 })
 
-$('#confirmBtn').on('click', function(){
-    var code=document.getElementById("confirmBtn").value;
+//SEND LOGIN REQUEST
+$('#login-btn').on('click', function(){
+    var request= signIn_request();
 
     $.ajax({
         type: "POST",
-        url: 'http://localhost:8100/api/v1/registration/confirm',
-        data: JSON.stringify(code),
+        url: 'http://localhost:8100/api/v1/login',
+        data: JSON.stringify(request),
         contentType: "application/json; charset=utf-8",
         success:function(response){
-            window.alert("ACCOUNT HAS BEEN APPROVED.")
+            window.alert("REQUEST HAS BEEN ACCEPTED.")
+            window.location.replace("index.html");
         },
         error: function(){
-            console.log("error.");
+            console.log("ERROR. COULD NOT SEND LOGIN REQUEST.");
         }
     })
 })

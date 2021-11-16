@@ -174,3 +174,10 @@ nav ul li:hover > ul {
 .content .container {
   text-align: center;
 }
+
+.footer {
+  height: 10vh;
+  background: #363636;
+  color: #fff;
+  text-align: center;
+}
