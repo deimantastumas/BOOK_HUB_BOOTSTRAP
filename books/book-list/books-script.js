@@ -2,16 +2,14 @@ var title= "Title";
 var author="Author";
 
 const html_col = [
-    '<div class="col">',
-        '<div class="card">',
-            '<a href="#" data-bs-toggle="modal" data-bs-target="#myModal">',
-                '<div class="card-block">',
-                    '<img src="https://via.placeholder.com/210x320">',
-                    '<h4 class="card-title">'+title+'</h4>',
-                    '<h6 class="card-subtitle text-muted">'+author+'</h6>',
-                '</div>',
-            '</a>',
-        '</div>',
+    '<div class="card">',
+        '<a href="#" data-bs-toggle="modal" data-bs-target="#myModal">',
+            '<div class="card-block">',
+                '<img src="https://via.placeholder.com/210x320">',
+                '<h4 class="card-title">'+title+'</h4>',
+                '<h6 class="card-subtitle text-muted">'+author+'</h6>',
+            '</div>',
+        '</a>',
     '</div>',
 ];
 
