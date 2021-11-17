@@ -1,68 +1,36 @@
 var title= "Title";
 var author="Author";
 
-var html_col = [
-    '<div class="row hidden-md-up">',
-        '<div class="col">',
-            '<div class="card">',
-                '<a href="#" data-bs-toggle="modal" data-bs-target="#myModal">',
-                    '<div class="card-block">',
-                        '<img src="https://via.placeholder.com/210x320">',
-                        '<h4 class="card-title">'+title+'</h4>',
-                        '<h6 class="card-subtitle text-muted">'+author+'</h6>',
-                    '</div>',
-                '</a>',
-            '</div>',
+const html_col = [
+    '<div class="col">',
+        '<div class="card">',
+            '<a href="#" data-bs-toggle="modal" data-bs-target="#myModal">',
+                '<div class="card-block">',
+                    '<img src="https://via.placeholder.com/210x320">',
+                    '<h4 class="card-title">'+title+'</h4>',
+                    '<h6 class="card-subtitle text-muted">'+author+'</h6>',
+                '</div>',
+            '</a>',
         '</div>',
-        '<div class="col">',
-            '<div class="card">',
-                '<a href="#" data-bs-toggle="modal" data-bs-target="#myModal">',
-                    '<div class="card-block">',
-                        '<img src="https://via.placeholder.com/210x320">',
-                        '<h4 class="card-title">'+title+'</h4>',
-                        '<h6 class="card-subtitle text-muted">'+author+'</h6>',
-                    '</div>',
-                '</a>',
-            '</div>',
-        '</div>',
-        '<div class="col">',
-            '<div class="card">',
-                '<a href="#" data-bs-toggle="modal" data-bs-target="#myModal">',
-                    '<div class="card-block">',
-                        '<img src="https://via.placeholder.com/210x320">',
-                        '<h4 class="card-title">'+title+'</h4>',
-                        '<h6 class="card-subtitle text-muted">'+author+'</h6>',
-                    '</div>',
-                '</a>',
-            '</div>',
-        '</div>',
-        '<div class="col">',
-            '<div class="card">',
-                '<a href="#" data-bs-toggle="modal" data-bs-target="#myModal">',
-                    '<div class="card-block">',
-                        '<img src="https://via.placeholder.com/210x320">',
-                        '<h4 class="card-title">'+title+'</h4>',
-                        '<h6 class="card-subtitle text-muted">'+author+'</h6>',
-                    '</div>',
-                '</a>',
-            '</div>',
-        '</div>',
-    '</div>'
-].join('');
+    '</div>',
+];
 
-//Creates empty div ROW
-// var html_row= '<div class="row hidden-md-up" id="add-col"></div>';
-// var div_row=document.createElement('div');
-// div_row.innerHTML= html_row;
-// document.getElementById('add-row').appendChild(div_row);
+var rowCount = 5;
+var colCount = 5;
 
-//Adds COLS to the ROW
-for(var i=0; i<10; i++){
-    var div = document.createElement('div');
-    // div.setAttribute('class', 'post block bc2');
-    div.innerHTML = html_col;
-    document.getElementById('add-row').appendChild(div);
-    console.log("Added 1 column to the row");
+for (let row = 0; row < rowCount; row++) {
+    // Create a row
+    const row = document.createElement('div');
+    div.className = "row hidden-md-up";
+    for (let col = 0; col < colCount; col++) {
+        // Create a column
+        const cellId = `${row}-${col}`;
+        const cell = document.createElement('div');
+        cell.className = "col";
+        cell.id = cellId;
+        row.appendChild(cell);
+    }
+    document.getElementById('add-row').appendChild(row);
 }
 
 $(document).ready(function() {
