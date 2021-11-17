@@ -50,17 +50,9 @@
               ></a>
               <ul class="dropdown">
                 <li class="element"><a href="#">Book List</a></li>
-                <li class="element"><a href="#">My Bookshelve</a></li>
+                <li class="element"><a href="bookshelve.html">My Bookshelve</a></li>
               </ul>
             </li>
-            <!-- <li class="nav-item">
-              <a href="#" class="nav-link">Employees</a>
-              <ul class="dropdown">
-                <li class="element"><a href="#">Employee List</a></li>
-                <li class="element"><a href="#">Manage Employees</a></li>
-                <li class="element"><a href="#">Add New Employee</a></li>
-              </ul>
-            </li> -->
             <li class="nav-item">
               <a href="#instructors" class="nav-link">About</a>
             </li>
@@ -115,6 +107,12 @@
 
     <section class="content p-2">
       <!-- POP UP BOX MODAL-->
+      <!-- JS ADDED HTML -->
+
+      <div id="add_to_me-MODAL">
+        
+      </div>
+
       <div class="modal" id="myModal">
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
@@ -170,112 +168,11 @@
          </div>
       </div>
       <div class="py-1">
-        <div class="container">
-          <!-- ROW========================================================================= -->
-          <div class="row hidden-md-up">
-            <div class="col">
-              <div class="card">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal">
-                   <div class="card-block">
-                  <img
-                    src="../../images/GTO-Great-Teacher-Onizuka.jpg"
-                    alt="book"
-                  />
-                  <h4 class="card-title">GTO: Great Teacher Onizuka</h4>
-                  <h6 class="card-subtitle text-muted">Author</h6>
-                </div>
-                </a>
-              </div>
-            </div>
+        <div class="container">         
+            <!-- JS ADDED HTML -->
+            <div id="add-row"></div>
 
-            <div class="col">
-              <div class="card">
-                <a href="#" data-bs-toggle="modal" data-bs-target="#myModal">
-                   <div class="card-block">
-                  <img src="../../images/jujutsu-kaisen.jpg" alt="book" />
-
-                  <h4 class="card-title">Jujutsu Kaisen</h4>
-                  <h6 class="card-subtitle text-muted">Author</h6>
-                </div>
-                </a>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card">
-                <div class="card-block">
-                  <img
-                    src="../../images/harry-potter-and-the-chamber-of-secrets.jpg"
-                    alt="book"
-                  />
-
-                  <h4 class="card-title">
-                    Harry Potter And The Chamber Of Secrets
-                  </h4>
-                  <h6 class="card-subtitle text-muted">Author</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-block">
-                  <img src="../../images/lord-of-the-rings.jpg" alt="book" />
-
-                  <h4 class="card-title">Lork Of The Rings</h4>
-                  <h6 class="card-subtitle text-muted">Author</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <br />
-          <!-- ROW========================================================================= -->
-          <div class="row hidden-md-up">
-            <div class="col">
-              <div class="card">
-                <div class="card-block">
-                  <img src="../../images/little-prince.jpg" alt="book" />
-
-                  <h4 class="card-title">Little Prince</h4>
-                  <h6 class="card-subtitle text-muted">Author</h6>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card">
-                <div class="card-block">
-                  <img src="../../images/sherlock-holmes.jpg" alt="book" />
-
-                  <h4 class="card-title">Sherlock Holmes</h4>
-                  <h6 class="card-subtitle text-muted">Author</h6>
-                </div>
-              </div>
-            </div>
-
-            <div class="col">
-              <div class="card">
-                <div class="card-block">
-                  <img src="../../images/great-gadsby.jpg" alt="book" />
-
-                  <h4 class="card-title">Great Gadsby</h4>
-                  <h6 class="card-subtitle text-muted">Author</h6>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <div class="card-block">
-                  <img src="../../images/1984.jpg" alt="book" />
-
-                  <h4 class="card-title">1984</h4>
-                  <h6 class="card-subtitle text-muted">Author</h6>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- ROW========================================================================= -->
         </div>
-      </div>
     </section>
 
     <section class="footer">
@@ -288,8 +185,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="../../script.js"></script>
-    <script src="../google-books-api.js"></script>
+    <script src="books-script.js"></script>
   </body>
 </html>
 <!-- ========================TO-DO========================== 
